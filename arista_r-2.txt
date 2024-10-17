@@ -1,0 +1,48 @@
+ARISTA - round 2
+
+1. #include <iostream>
+using namespace std;
+
+int recurse(int b) {
+    if (b == 0) return 100;
+    recurse(b--);
+}
+
+int main() {
+    cout<<"Hello World!" << endl;
+    cout << recurse(10) << endl;
+}
+
+2. what is stack overflow? Why does it happen?
+
+3. what is the output of the following? explain also.
+
+#include <iostream>
+using namespace std;
+
+int recurse(int b) {
+    if (b == 0) return 100;
+    recurse(--b);
+}
+
+int main() {
+    cout<<"Hello World!" << endl;
+    cout << recurse(10) << endl;
+}
+
+4. what are the various segments of memory?
+5. how is a process started? explain in the context of linux.
+6. what are fork() and exec() system calls?
+7. explain smart_pointer.
+8. implement a custom shared pointer.
+9. In a BST, given a value, find the next smaller value that occurs in the bst. (T = O(H), S = O(H))
+10. design 2 APIs for below requirements:
+Contact app
+name:str, phone:str, dialFreq:uint
+all unique names
+1:1 among name and phone
+
+1. search all the names starting with ( str )
+  return a list of all names that start with the passed str along with corresponding phone numbers
+2. get100MostFrequentlyDialledNumber()
+  return a list of 100 most frequently dialled number
